@@ -65,6 +65,7 @@ OUTPUT_QUERY/*
 
 application.log*
 ConfigSparqlShapeChecker.properties
+ConfigShaclDiffExtractor.properties
 
 # don't save db
 localdb/
