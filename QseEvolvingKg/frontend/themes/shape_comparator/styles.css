@@ -1,0 +1,9 @@
+@import url('./main-layout.css');
+@import url('./views/gridwith-filters-view.css');
+@import url('./views/graphs-view.css');
+@import url('./views/new-graph-view.css');
+@import url('./views/versions-view.css');
+@import url('./views/generate-shapes-view.css');
+@import url('./views/shapes-view.css');
+@import url('./views/compare-shapes-view.css');
+@import url('./views/comparision-details-view.css');

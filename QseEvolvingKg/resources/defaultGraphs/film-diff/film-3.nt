@@ -1,0 +1,267 @@
+<http://semantics.id/ns/example/film#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example/film#Artwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#hasSoundtrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#Soundtrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#Film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#fullName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example#julius_avery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#julius_avery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Director> .
+<http://semantics.id/ns/example#julius_avery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#ScriptWriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#kyle_maclachlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#kyle_maclachlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example/film#dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example/film#dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://semantics.id/ns/example/film#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example#film_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example#film_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#releaseYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example/film#hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#genre_science_fiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_science_fiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example/film#hasComposer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#hans_zimmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#hans_zimmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Composer> .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#zendaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#zendaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example#EntertainmentOne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#establishedDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example/film#establishedDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#sequel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://semantics.id/ns/example/film#sequel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#minCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://semantics.id/ns/example/film#hasPerformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example#writer_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#writer_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example#film_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example#film_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#bill_condon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Director> .
+<http://semantics.id/ns/example#bill_condon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example/film#genre_romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example#writer_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#writer_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#dan_stevens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#dan_stevens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example/film#Belle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Soundtrack> .
+<http://semantics.id/ns/example/film#Belle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#emma_watson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#emma_watson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example#ewan_mcgregor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#ewan_mcgregor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://semantics.id/ns/example/film#alan_menken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#alan_menken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Performer> .
+<http://semantics.id/ns/example/film#alan_menken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Composer> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://semantics.id/ns/example/film#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://semantics.id/ns/example/film#Performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#hasCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#genre_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example/film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://semantics.id/ns/example#film_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example#film_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#alicia_vikander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#alicia_vikander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example/film#genre_drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example#writer_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#writer_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#marc_forster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Director> .
+<http://semantics.id/ns/example#marc_forster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#genre_animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example#film_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example#film_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#writer_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#writer_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#writer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example#writer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#hayley_atwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#hayley_atwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example#MandevilleFilms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#film_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example#film_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example/film#budget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://semantics.id/ns/example/film#hasComposer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semantics.id/ns/example/film#hasCrew> .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semantics.id/ns/example/film#hasPerformer> .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semantics.id/ns/example/film#hasCrew> .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semantics.id/ns/example/film#hasCrew> .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/knows> .
+<http://semantics.id/ns/example/film#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semantics.id/ns/example/film#Artwork> .
+<http://semantics.id/ns/example/film#Film> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semantics.id/ns/example/film#Artwork> .
+<http://semantics.id/ns/example/film#ScriptWriter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semantics.id/ns/example/film#Performer> .
+<http://semantics.id/ns/example/film#Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Artwork> .
+<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#hasSoundtrack> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#fullName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#releaseYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasComposer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#sequel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasPerformer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Artwork> .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#hasCrew> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#budget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#hasSoundtrack> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Soundtrack> .
+<http://semantics.id/ns/example/film#fullName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://semantics.id/ns/example/film#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example/film#releaseYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Genre> .
+<http://semantics.id/ns/example/film#hasComposer> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Composer> .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Actor> .
+<http://semantics.id/ns/example/film#establishedDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#sequel> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasPerformer> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Performer> .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#Director> .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#ScriptWriter> .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#hasCrew> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://semantics.id/ns/example/film#budget> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/2002/07/owl#inverseOf> <http://semantics.id/ns/example/film#sequel> .
+<http://semantics.id/ns/example/film#duration> <http://www.w3.org/2000/01/rdf-schema#label> "duration" .
+<http://semantics.id/ns/example/film#Artwork> <http://www.w3.org/2000/01/rdf-schema#label> "Artwork" .
+<http://semantics.id/ns/example/film#hasSoundtrack> <http://www.w3.org/2000/01/rdf-schema#label> "hasSoundtrack" .
+<http://semantics.id/ns/example/film#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#label> "Soundtrack" .
+<http://semantics.id/ns/example/film#Film> <http://www.w3.org/2000/01/rdf-schema#label> "Film" .
+<http://semantics.id/ns/example/film#fullName> <http://www.w3.org/2000/01/rdf-schema#label> "fullName" .
+<http://semantics.id/ns/example/film#ScriptWriter> <http://www.w3.org/2000/01/rdf-schema#label> "ScriptWriter" .
+<http://semantics.id/ns/example/film#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director" .
+<http://semantics.id/ns/example/film#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "dateOfBirth" .
+<http://semantics.id/ns/example/film#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+<http://semantics.id/ns/example#film_4> <http://www.w3.org/2000/01/rdf-schema#label> "Dune" .
+<http://semantics.id/ns/example/film#releaseYear> <http://www.w3.org/2000/01/rdf-schema#label> "releaseYear" .
+<http://semantics.id/ns/example/film#hasGenre> <http://www.w3.org/2000/01/rdf-schema#label> "hasGenre" .
+<http://semantics.id/ns/example/film#genre_science_fiction> <http://www.w3.org/2000/01/rdf-schema#label> "Science Fiction"@en .
+<http://semantics.id/ns/example/film#hasComposer> <http://www.w3.org/2000/01/rdf-schema#label> "hasComposer" .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "hasActor" .
+<http://semantics.id/ns/example#EntertainmentOne> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment One" .
+<http://semantics.id/ns/example/film#establishedDate> <http://www.w3.org/2000/01/rdf-schema#label> "establishedDate" .
+<http://semantics.id/ns/example/film#prequel> <http://www.w3.org/2000/01/rdf-schema#label> "prequel" .
+<http://semantics.id/ns/example/film#sequel> <http://www.w3.org/2000/01/rdf-schema#label> "sequel" .
+<http://semantics.id/ns/example/film#hasPerformer> <http://www.w3.org/2000/01/rdf-schema#label> "hasPerformer" .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://www.w3.org/2000/01/rdf-schema#label> "Walt Disney Pictures" .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/2000/01/rdf-schema#label> "hasDirector" .
+<http://semantics.id/ns/example#film_3> <http://www.w3.org/2000/01/rdf-schema#label> "Beauty and the Beast" .
+<http://semantics.id/ns/example/film#genre_family> <http://www.w3.org/2000/01/rdf-schema#label> "Family" .
+<http://semantics.id/ns/example/film#genre_romance> <http://www.w3.org/2000/01/rdf-schema#label> "Romance" .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/2000/01/rdf-schema#label> "hasScriptWriter" .
+<http://semantics.id/ns/example/film#Belle> <http://www.w3.org/2000/01/rdf-schema#label> "Belle (Soundtrack Version)" .
+<http://semantics.id/ns/example/film#Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre" .
+<http://semantics.id/ns/example/film#friendOf> <http://www.w3.org/2000/01/rdf-schema#label> "friendOf" .
+<http://semantics.id/ns/example/film#Performer> <http://www.w3.org/2000/01/rdf-schema#label> "Performer" .
+<http://semantics.id/ns/example/film#Composer> <http://www.w3.org/2000/01/rdf-schema#label> "Composer" .
+<http://semantics.id/ns/example/film#hasCrew> <http://www.w3.org/2000/01/rdf-schema#label> "hasCrew" .
+<http://semantics.id/ns/example/film#genre_action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
+<http://semantics.id/ns/example#film_2> <http://www.w3.org/2000/01/rdf-schema#label> "Son of a Gun" .
+<http://semantics.id/ns/example/film#genre_drama> <http://www.w3.org/2000/01/rdf-schema#label> "Drama" .
+<http://semantics.id/ns/example/film#genre_animation> <http://www.w3.org/2000/01/rdf-schema#label> "Animation" .
+<http://semantics.id/ns/example#film_1> <http://www.w3.org/2000/01/rdf-schema#label> "Christopher Robin" .
+<http://semantics.id/ns/example#MandevilleFilms> <http://www.w3.org/2000/01/rdf-schema#label> "Mandeville Films" .
+<http://semantics.id/ns/example#film_5> <http://www.w3.org/2000/01/rdf-schema#label> "Dune" .
+<http://semantics.id/ns/example/film#budget> <http://www.w3.org/2000/01/rdf-schema#label> "budget" .
+<http://semantics.id/ns/example/film#Belle> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.youtube.com/watch?v=piYIZaoBJMQ" .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasSoundtrack> <http://semantics.id/ns/example/film#Belle> .
+<http://semantics.id/ns/example#julius_avery> <http://semantics.id/ns/example/film#fullName> "Julius Avery" .
+<http://semantics.id/ns/example/film#kyle_maclachlan> <http://semantics.id/ns/example/film#fullName> "Kyle Merritt MacLachlan" .
+<http://semantics.id/ns/example/film#hans_zimmer> <http://semantics.id/ns/example/film#fullName> "Hans Zimmer" .
+<http://semantics.id/ns/example/film#zendaya> <http://semantics.id/ns/example/film#fullName> "Zendaya Maree Stoermer Coleman" .
+<http://semantics.id/ns/example#writer_5> <http://semantics.id/ns/example/film#fullName> "Evan Spiliotopoulos" .
+<http://semantics.id/ns/example#bill_condon> <http://semantics.id/ns/example/film#fullName> "Bill Condon" .
+<http://semantics.id/ns/example#writer_4> <http://semantics.id/ns/example/film#fullName> "Stephen Chbosky" .
+<http://semantics.id/ns/example#dan_stevens> <http://semantics.id/ns/example/film#fullName> "Dan Stevens" .
+<http://semantics.id/ns/example#emma_watson> <http://semantics.id/ns/example/film#fullName> "Emma Watson" .
+<http://semantics.id/ns/example#ewan_mcgregor> <http://semantics.id/ns/example/film#fullName> "Ewan McGregor" .
+<http://semantics.id/ns/example/film#alan_menken> <http://semantics.id/ns/example/film#fullName> "Alan Menken" .
+<http://semantics.id/ns/example#alicia_vikander> <http://semantics.id/ns/example/film#fullName> "Alicia Vikander" .
+<http://semantics.id/ns/example#writer_3> <http://semantics.id/ns/example/film#fullName> "John Collee" .
+<http://semantics.id/ns/example#marc_forster> <http://semantics.id/ns/example/film#fullName> "Marc Forster" .
+<http://semantics.id/ns/example#writer_2> <http://semantics.id/ns/example/film#fullName> "Alex Ross" .
+<http://semantics.id/ns/example#writer_1> <http://semantics.id/ns/example/film#fullName> "Tom McCarthy" .
+<http://semantics.id/ns/example#hayley_atwell> <http://semantics.id/ns/example/film#fullName> "Hayley Atwell" .
+<http://semantics.id/ns/example/film#kyle_maclachlan> <http://semantics.id/ns/example/film#dateOfBirth> "1959-02-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example/film#zendaya> <http://semantics.id/ns/example/film#dateOfBirth> "1996-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#dan_stevens> <http://semantics.id/ns/example/film#dateOfBirth> "1982-10-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#emma_watson> <http://semantics.id/ns/example/film#dateOfBirth> "1990-04-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#ewan_mcgregor> <http://semantics.id/ns/example/film#dateOfBirth> "1971-03-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#writer_1> <http://semantics.id/ns/example/film#dateOfBirth> "1966-06-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#hayley_atwell> <http://semantics.id/ns/example/film#dateOfBirth> "1982-04-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#film_4> <http://semantics.id/ns/example/film#releaseYear> "2021"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#releaseYear> "2017"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#releaseYear> "2014"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#releaseYear> "2018"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example#film_5> <http://semantics.id/ns/example/film#releaseYear> "1984"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example#film_4> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_science_fiction> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_family> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_romance> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_action> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_drama> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_family> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_animation> .
+<http://semantics.id/ns/example#film_5> <http://semantics.id/ns/example/film#hasGenre> <http://semantics.id/ns/example/film#genre_science_fiction> .
+<http://semantics.id/ns/example#film_4> <http://semantics.id/ns/example/film#hasComposer> <http://semantics.id/ns/example/film#hans_zimmer> .
+<http://semantics.id/ns/example#film_4> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example/film#zendaya> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#dan_stevens> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#emma_watson> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#ewan_mcgregor> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#ewan_mcgregor> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#alicia_vikander> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#ewan_mcgregor> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example#hayley_atwell> .
+<http://semantics.id/ns/example#film_5> <http://semantics.id/ns/example/film#hasActor> <http://semantics.id/ns/example/film#kyle_maclachlan> .
+<http://semantics.id/ns/example#EntertainmentOne> <http://semantics.id/ns/example/film#establishedDate> "1973-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://semantics.id/ns/example/film#establishedDate> "1985-06-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#MandevilleFilms> <http://semantics.id/ns/example/film#establishedDate> "1955-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example/film#hasGenre> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#hasActor> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#hasDirector> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#hasScriptWriter> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#Belle> <http://semantics.id/ns/example/film#hasPerformer> <http://semantics.id/ns/example/film#alan_menken> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasDirector> <http://semantics.id/ns/example#bill_condon> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasDirector> <http://semantics.id/ns/example#julius_avery> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasDirector> <http://semantics.id/ns/example#marc_forster> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#writer_5> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#writer_4> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#julius_avery> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#writer_3> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#writer_2> .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasScriptWriter> <http://semantics.id/ns/example#writer_1> .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/created> "2022-09-30" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/creator> "Fajar J. Ekaputra" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/title> "The Film Ontology" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/contributor> "Marta Sabou" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/contributor> "Laura Waltersdorfer" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/contributor> "Filip Kovacevic" .
+<http://semantics.id/ns/example/film> <http://purl.org/dc/terms/description> "An ontology about film and related concepts developed for ISS course at TU Wien." .
+<http://semantics.id/ns/example/film> <http://www.w3.org/2002/07/owl#versionIRI> <http://semantics.id/ns/example/film/1.0.0> .

@@ -1,0 +1,6 @@
+<http://example.org/orangeCat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Cat> .
+<http://example.org/blackCat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Cat> .
+<http://example.org/greyCat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Cat> .
+<http://example.org/orangeCat> <http://example.org/color> "orange" .
+<http://example.org/blackCat> <http://example.org/color> "black" .
+<http://example.org/greyCat> <http://example.org/color> "grey" .

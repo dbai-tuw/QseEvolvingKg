@@ -1,0 +1,24 @@
+<http://semantics.id/ns/example/film#hasFilmStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://semantics.id/ns/example/film#hasFilmStudio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#Film> .
+<http://semantics.id/ns/example/film#hasFilmStudio> <http://www.w3.org/2000/01/rdf-schema#range> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example/film#hasFilmStudio> <http://www.w3.org/2000/01/rdf-schema#label> "hasFilmStudio" .
+<http://semantics.id/ns/example/film#hasFilmStudio> <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://semantics.id/ns/example/film#establishedDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example/film#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example/film#FilmStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semantics.id/ns/example/film#FilmStudio> <http://www.w3.org/2000/01/rdf-schema#label> "FilmStudio" .
+<http://semantics.id/ns/example#EntertainmentOne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example#MandevilleFilms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semantics.id/ns/example/film#FilmStudio> .
+<http://semantics.id/ns/example#EntertainmentOne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#EntertainmentOne> <http://semantics.id/ns/example/film#establishedDate> "1973-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#EntertainmentOne> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment One" .
+<http://semantics.id/ns/example#MandevilleFilms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#MandevilleFilms> <http://semantics.id/ns/example/film#establishedDate> "1955-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#MandevilleFilms> <http://www.w3.org/2000/01/rdf-schema#label> "Mandeville Films" .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://semantics.id/ns/example/film#establishedDate> "1985-06-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://semantics.id/ns/example#WaltDisneyPictures> <http://www.w3.org/2000/01/rdf-schema#label> "Walt Disney Pictures" .
+<http://semantics.id/ns/example#film_1> <http://semantics.id/ns/example/film#hasFilmStudio> <http://semantics.id/ns/example#WaltDisneyPictures> .
+<http://semantics.id/ns/example#film_2> <http://semantics.id/ns/example/film#hasFilmStudio> <http://semantics.id/ns/example#EntertainmentOne> .
+<http://semantics.id/ns/example#film_3> <http://semantics.id/ns/example/film#hasFilmStudio> <http://semantics.id/ns/example#WaltDisneyPictures> .

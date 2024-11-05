@@ -1,0 +1,875 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://shaclshapes.org/ActorShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/dateOfBirthActorShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNameActorShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderActorShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Actor> .
+
+<http://shaclshapes.org/AnnotationPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:AnnotationProperty .
+
+<http://shaclshapes.org/ClassShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "11"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subClassOfClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:Class .
+
+<http://shaclshapes.org/ComposerShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNameComposerShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderComposerShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Composer> .
+
+<http://shaclshapes.org/DatatypePropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:DatatypeProperty .
+
+<http://shaclshapes.org/DatatypeShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#targetClass> rdfs:Datatype .
+
+<http://shaclshapes.org/DirectorShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNameDirectorShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderDirectorShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Director> .
+
+<http://shaclshapes.org/FilmShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasActorFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasComposerFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasDirectorFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasFilmStudioFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasGenreFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasScriptWriterFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasSoundtrackFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/releaseYearFilmShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Film> .
+
+<http://shaclshapes.org/FilmStudioShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/establishedDateFilmStudioShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelFilmStudioShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#FilmStudio> .
+
+<http://shaclshapes.org/FunctionalPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:FunctionalProperty .
+
+<http://shaclshapes.org/GenreShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelGenreShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Genre> .
+
+<http://shaclshapes.org/NamedIndividualShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "32"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/dateOfBirthNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/establishedDateNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNameNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasActorNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasComposerNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasDirectorNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasFilmStudioNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasGenreNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasPerformerNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasScriptWriterNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasSoundtrackNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/releaseYearNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/seeAlsoNamedIndividualShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:NamedIndividual .
+
+<http://shaclshapes.org/ObjectPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "13"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/inverseOfObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/minCardinalityObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:ObjectProperty .
+
+<http://shaclshapes.org/OntologyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/contributorOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/createdOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/creatorOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/descriptionOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/titleOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/versionIRIOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:Ontology .
+
+<http://shaclshapes.org/PerformerShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNamePerformerShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderPerformerShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Performer> .
+
+<http://shaclshapes.org/ScriptWriterShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/dateOfBirthScriptWriterShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/fullNameScriptWriterShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/genderScriptWriterShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#ScriptWriter> .
+
+<http://shaclshapes.org/SoundtrackShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/hasPerformerSoundtrackShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelSoundtrackShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/seeAlsoSoundtrackShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://semantics.id/ns/example/film#Soundtrack> .
+
+<http://shaclshapes.org/SymmetricPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainSymmetricPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelSymmetricPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeSymmetricPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfSymmetricPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:SymmetricProperty .
+
+<http://shaclshapes.org/TransitivePropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainTransitivePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/inverseOfTransitivePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelTransitivePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeTransitivePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:TransitiveProperty .
+
+<http://shaclshapes.org/contributorOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:contributor .
+
+<http://shaclshapes.org/createdOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:created .
+
+<http://shaclshapes.org/creatorOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:creator .
+
+<http://shaclshapes.org/dateOfBirthActorShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#dateOfBirth> .
+
+<http://shaclshapes.org/dateOfBirthNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#dateOfBirth> .
+
+<http://shaclshapes.org/dateOfBirthScriptWriterShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#dateOfBirth> .
+
+<http://shaclshapes.org/descriptionOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:description .
+
+<http://shaclshapes.org/domainDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "13"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainSymmetricPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainTransitivePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/establishedDateFilmStudioShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#establishedDate> .
+
+<http://shaclshapes.org/establishedDateNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:date ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#establishedDate> .
+
+<http://shaclshapes.org/fullNameActorShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/fullNameComposerShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/fullNameDirectorShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/fullNameNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "17"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/fullNamePerformerShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/fullNameScriptWriterShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#fullName> .
+
+<http://shaclshapes.org/genderActorShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/genderComposerShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/genderDirectorShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/genderNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "14"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/genderPerformerShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/genderScriptWriterShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "4"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#gender> .
+
+<http://shaclshapes.org/hasActorFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ActorShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Actor> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasActor> .
+
+<http://shaclshapes.org/hasActorNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ActorShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Actor> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasActor> .
+
+<http://shaclshapes.org/hasComposerFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ComposerShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Composer> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasComposer> .
+
+<http://shaclshapes.org/hasComposerNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ComposerShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Composer> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasComposer> .
+
+<http://shaclshapes.org/hasDirectorFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DirectorShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#ScriptWriter> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Director> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasDirector> .
+
+<http://shaclshapes.org/hasDirectorNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DirectorShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#ScriptWriter> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Director> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasDirector> .
+
+<http://shaclshapes.org/hasFilmStudioFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/FilmStudioShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#FilmStudio> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasFilmStudio> .
+
+<http://shaclshapes.org/hasFilmStudioNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/FilmStudioShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#FilmStudio> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasFilmStudio> .
+
+<http://shaclshapes.org/hasGenreFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/GenreShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Genre> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasGenre> .
+
+<http://shaclshapes.org/hasGenreNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/GenreShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Genre> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasGenre> .
+
+<http://shaclshapes.org/hasPerformerNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ComposerShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Performer> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Composer> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasPerformer> .
+
+<http://shaclshapes.org/hasPerformerSoundtrackShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ComposerShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Performer> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Composer> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasPerformer> .
+
+<http://shaclshapes.org/hasScriptWriterFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ScriptWriterShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#ScriptWriter> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Director> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasScriptWriter> .
+
+<http://shaclshapes.org/hasScriptWriterNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ScriptWriterShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#ScriptWriter> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Director> ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasScriptWriter> .
+
+<http://shaclshapes.org/hasSoundtrackFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/SoundtrackShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Soundtrack> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasSoundtrack> .
+
+<http://shaclshapes.org/hasSoundtrackNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/SoundtrackShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:NamedIndividual ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> <http://semantics.id/ns/example/film#Soundtrack> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#hasSoundtrack> .
+
+<http://shaclshapes.org/inverseOfObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ObjectPropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:TransitiveProperty ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:inverseOf .
+
+<http://shaclshapes.org/inverseOfTransitivePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ObjectPropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:TransitiveProperty ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:inverseOf .
+
+<http://shaclshapes.org/labelClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "10"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "7"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelFilmStudioShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "3"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelGenreShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "14"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  ] [
+    <http://shaclshapes.org/confidence> 0E0 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+    <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "12"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelSoundtrackShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelSymmetricPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelTransitivePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/minCardinalityObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+  <http://www.w3.org/ns/shacl#path> owl:minCardinality .
+
+<http://shaclshapes.org/rangeDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> rdfs:Datatype ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DatatypeShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> rdfs:Datatype ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DatatypeShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "13"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeSymmetricPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeTransitivePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/releaseYearFilmShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#releaseYear> .
+
+<http://shaclshapes.org/releaseYearNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+  <http://www.w3.org/ns/shacl#path> <http://semantics.id/ns/example/film#releaseYear> .
+
+<http://shaclshapes.org/seeAlsoNamedIndividualShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#path> rdfs:seeAlso .
+
+<http://shaclshapes.org/seeAlsoSoundtrackShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:seeAlso .
+
+<http://shaclshapes.org/subClassOfClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "6"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subClassOf .
+
+<http://shaclshapes.org/subPropertyOfObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "5"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ObjectPropertyShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/subPropertyOfSymmetricPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ObjectPropertyShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/titleOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 0E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:title .
+
+<http://shaclshapes.org/versionIRIOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#path> owl:versionIRI .
+
+
