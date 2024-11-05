@@ -46,9 +46,9 @@ The other projects can be run by using the classes "shacldiffextractor.ShaclDiff
 For a successful execution on a Linux VM the following commands were run before:  
 sudo mvn clean install  
 sudo mvn dependency:copy-dependencies  
-sudo java -cp "target/classes:target/dependency/`*`" shacldiffextractor.ShaclDiffExtractor   
+sudo java -cp "target/classes:target/dependency/\*" shacldiffextractor.ShaclDiffExtractor   
 or  
-sudo java -cp "target/classes:target/dependency/`*`" sparqlshapechecker.SparqlShapeChecker     
+sudo java -cp "target/classes:target/dependency/\*" sparqlshapechecker.SparqlShapeChecker     
 
 ## Project structure
 
